@@ -1,0 +1,115 @@
+/* Common section styles */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-fest {
+    margin-top: 70px;
+}
+
+/* Content container styles */
+.content1,
+.content2,
+.content3 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0px 0;
+}
+
+/* Text content styles */
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.text p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Image container styles */
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* First section - image on right */
+.content1 {
+    flex-direction: row;
+}
+
+/* Second section - image on left */
+.content2 {
+    flex-direction: row;
+}
+
+.content2 .image {
+    order: -1;
+}
+
+/* Third section - image on right */
+.content3 {
+    flex-direction: row;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    .content1,
+    .content2,
+    .content3 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    /* Reset order for mobile - text first, image second */
+    .content2 .image {
+        order: 0;
+    }
+
+    .text {
+        order: -1;
+    }
+
+    .image {
+        order: 0;
+    }
+
+    .text h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
