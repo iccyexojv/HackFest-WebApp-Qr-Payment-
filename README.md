@@ -41,7 +41,7 @@ This web application was developed as part of the **KBC HackFest 2025** event ma
 ### 1️⃣ Clone the Repository:
 
 ```bash
-git clone https://github.com/iccyexojv/HackFest-WebApp-Qr-Payment.git
+git clone https://github.com/iccyexojv/HackFest-WebApp-Qr-Payment-.git
 cd HackFest-WebApp-Qr-Payment
 ```
 
